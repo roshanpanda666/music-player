@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;700&family=Varela+Round&display=swap');
+
+body{
+    background-color: rgb(80, 78, 78);
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Rajdhani', sans-serif;;
+}
+
+nav{
+    font-family: 'Rajdhani', sans-serif;
+    /* font-family: 'Varela Round', sans-serif; */
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 45px;
+    align-items: center;
+    font-size: 25px;
+    margin-top: -1px;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+    
+}
+
+#navcont{
+    margin-right: 14px;
+    
+}
+
+.container{
+    min-height:72vh ;
+    background-color: black;
+    color: white;
+    display: flex;
+    margin-top: -30px;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 14px;
+    background-image: url(content/background.jpg);
+    background-size: 1200px 700px;
+
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: rgb(0, 0, 0);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    
+}
+
+#progress_bar{
+    width: 80vw;
+    cursor: pointer;
+    
+}
+
+.mainicons{
+    margin-top:10px;
+}
+
+.mainicons i{
+    cursor: pointer;
+}
+
+
+.songlist{
+    width: 100%;
+}
+.songitem{
+    height: 50px;
+    display: flex;
+    background-color: black;
+    width: 230px;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.songitem img{
+    width: 50px;
+    border-radius: 30px;
+}
+
+.timestamp{
+    margin: 0 21px;
+    cursor: pointer;
+}
+.timestamp i{
+    cursor: pointer;
+}
+
+.songitemcontainer{
+    margin-top: 44px;
+}
+
+.songinfo{
+    display: flex;
+}
+
+#songanime{
+    display: none;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  #playicon{
+   animation:rotation 2s infinite linear;
+   animation-play-state: paused;
+   /* change with js */
+
+  }
